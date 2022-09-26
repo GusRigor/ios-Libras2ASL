@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C9033B228C6A17A00EDFC84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9033B128C6A17A00EDFC84 /* AppDelegate.swift */; };
+		1C9033B428C6A17A00EDFC84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9033B328C6A17A00EDFC84 /* SceneDelegate.swift */; };
+		1C9033B628C6A17A00EDFC84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9033B528C6A17A00EDFC84 /* ViewController.swift */; };
+		1C9033BB28C6A17C00EDFC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9033BA28C6A17C00EDFC84 /* Assets.xcassets */; };
+		1C9033BE28C6A17C00EDFC84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9033BC28C6A17C00EDFC84 /* LaunchScreen.storyboard */; };
+		1C9033CC28C6A47300EDFC84 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9033CB28C6A47300EDFC84 /* CameraView.swift */; };
+		1CDCB87928C80D2B000047B1 /* FingerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDCB87828C80D2B000047B1 /* FingerModel.swift */; };
+		1CDCB87C28C8EA7F000047B1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDCB87B28C8EA7F000047B1 /* HeaderView.swift */; };
+		1CDCB87E28C8EC6A000047B1 /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDCB87D28C8EC6A000047B1 /* HeaderViewModel.swift */; };
+		1CDCB88128CFBC98000047B1 /* UIImage+GIF.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDCB88028CFBC98000047B1 /* UIImage+GIF.swift.swift */; };
+		1CE8471F28D916E500DBDEE6 /* HandPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE8471E28D916E500DBDEE6 /* HandPositions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C9033AE28C6A17A00EDFC84 /* Libras2ASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Libras2ASL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9033B128C6A17A00EDFC84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C9033B328C6A17A00EDFC84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1C9033B528C6A17A00EDFC84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C9033BA28C6A17C00EDFC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C9033BD28C6A17C00EDFC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C9033BF28C6A17C00EDFC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C9033CB28C6A47300EDFC84 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		1CDCB87828C80D2B000047B1 /* FingerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerModel.swift; sourceTree = "<group>"; };
+		1CDCB87B28C8EA7F000047B1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1CDCB87D28C8EC6A000047B1 /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
+		1CDCB88028CFBC98000047B1 /* UIImage+GIF.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+GIF.swift.swift"; sourceTree = "<group>"; };
+		1CE8471E28D916E500DBDEE6 /* HandPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPositions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C9033AB28C6A17A00EDFC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C9033A528C6A17A00EDFC84 = {
+			isa = PBXGroup;
+			children = (
+				1C9033B028C6A17A00EDFC84 /* Libras2ASL */,
+				1C9033AF28C6A17A00EDFC84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C9033AF28C6A17A00EDFC84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C9033AE28C6A17A00EDFC84 /* Libras2ASL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C9033B028C6A17A00EDFC84 /* Libras2ASL */ = {
+			isa = PBXGroup;
+			children = (
+				1C9033CA28C6A2C300EDFC84 /* Sources */,
+				1C9033C928C6A2B900EDFC84 /* Resources */,
+				1C9033B128C6A17A00EDFC84 /* AppDelegate.swift */,
+				1C9033B328C6A17A00EDFC84 /* SceneDelegate.swift */,
+				1C9033BF28C6A17C00EDFC84 /* Info.plist */,
+			);
+			path = Libras2ASL;
+			sourceTree = "<group>";
+		};
+		1C9033C528C6A28A00EDFC84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CDCB87A28C8EA17000047B1 /* Header */,
+				1C9033CB28C6A47300EDFC84 /* CameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C9033C728C6A29600EDFC84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C9033B528C6A17A00EDFC84 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C9033C828C6A2A000EDFC84 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1C9033BC28C6A17C00EDFC84 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1C9033C928C6A2B900EDFC84 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C9033BA28C6A17C00EDFC84 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C9033CA28C6A2C300EDFC84 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1CDCB87F28CFBB2E000047B1 /* Commons */,
+				1CDCB87528C80C7D000047B1 /* Protocols */,
+				1CDCB87428C80B9C000047B1 /* Model */,
+				1C9033C828C6A2A000EDFC84 /* Storyboard */,
+				1C9033C728C6A29600EDFC84 /* Controller */,
+				1C9033C528C6A28A00EDFC84 /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1CDCB87428C80B9C000047B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CDCB87828C80D2B000047B1 /* FingerModel.swift */,
+				1CE8471E28D916E500DBDEE6 /* HandPositions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CDCB87528C80C7D000047B1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1CDCB87A28C8EA17000047B1 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1CDCB87B28C8EA7F000047B1 /* HeaderView.swift */,
+				1CDCB87D28C8EC6A000047B1 /* HeaderViewModel.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		1CDCB87F28CFBB2E000047B1 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				1CDCB88028CFBC98000047B1 /* UIImage+GIF.swift.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C9033AD28C6A17A00EDFC84 /* Libras2ASL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C9033C228C6A17C00EDFC84 /* Build configuration list for PBXNativeTarget "Libras2ASL" */;
+			buildPhases = (
+				1C9033AA28C6A17A00EDFC84 /* Sources */,
+				1C9033AB28C6A17A00EDFC84 /* Frameworks */,
+				1C9033AC28C6A17A00EDFC84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Libras2ASL;
+			productName = Libras2ASL;
+			productReference = 1C9033AE28C6A17A00EDFC84 /* Libras2ASL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C9033A628C6A17A00EDFC84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1C9033AD28C6A17A00EDFC84 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1C9033A928C6A17A00EDFC84 /* Build configuration list for PBXProject "Libras2ASL" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C9033A528C6A17A00EDFC84;
+			productRefGroup = 1C9033AF28C6A17A00EDFC84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C9033AD28C6A17A00EDFC84 /* Libras2ASL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C9033AC28C6A17A00EDFC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9033BE28C6A17C00EDFC84 /* LaunchScreen.storyboard in Resources */,
+				1C9033BB28C6A17C00EDFC84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C9033AA28C6A17A00EDFC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CDCB87E28C8EC6A000047B1 /* HeaderViewModel.swift in Sources */,
+				1CDCB87C28C8EA7F000047B1 /* HeaderView.swift in Sources */,
+				1C9033B628C6A17A00EDFC84 /* ViewController.swift in Sources */,
+				1C9033B228C6A17A00EDFC84 /* AppDelegate.swift in Sources */,
+				1CE8471F28D916E500DBDEE6 /* HandPositions.swift in Sources */,
+				1C9033B428C6A17A00EDFC84 /* SceneDelegate.swift in Sources */,
+				1CDCB87928C80D2B000047B1 /* FingerModel.swift in Sources */,
+				1CDCB88128CFBC98000047B1 /* UIImage+GIF.swift.swift in Sources */,
+				1C9033CC28C6A47300EDFC84 /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C9033BC28C6A17C00EDFC84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C9033BD28C6A17C00EDFC84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C9033C028C6A17C00EDFC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C9033C128C6A17C00EDFC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C9033C328C6A17C00EDFC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LW4D8C52G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Libras2ASL/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Para podermos detectar os gestos";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tcc.request.rigor.Libras2ASL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1C9033C428C6A17C00EDFC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LW4D8C52G7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Libras2ASL/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Para podermos detectar os gestos";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tcc.request.rigor.Libras2ASL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C9033A928C6A17A00EDFC84 /* Build configuration list for PBXProject "Libras2ASL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C9033C028C6A17C00EDFC84 /* Debug */,
+				1C9033C128C6A17C00EDFC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C9033C228C6A17C00EDFC84 /* Build configuration list for PBXNativeTarget "Libras2ASL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C9033C328C6A17C00EDFC84 /* Debug */,
+				1C9033C428C6A17C00EDFC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C9033A628C6A17A00EDFC84 /* Project object */;
+}
