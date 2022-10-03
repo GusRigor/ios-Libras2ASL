@@ -192,44 +192,44 @@ class ViewController: UIViewController {
                 }
             }
         }
-//
-//        else if (indexUp < 0 &&
-//            middleUp < 0 &&
-//            ringUp < 0 &&
-//            littleUp < 0) {
-//            if self.restingHand {
-//                if handPosition == .handResting {
-//                    self.restingHand = false
-//                    descriptionLabel.text = "Mão levantada"
-//                    gifImage.isHidden = true
-//                    changeRestingHand()
-//                    handPosition = .firstHandUp
-//                } else if handPosition == .firstHandDown {
-//                    self.restingHand = false
-//                    descriptionLabel.text = "Comer - eat"
-//                    gifImage.isHidden = false
-//                    print("Comer")
-//                    handPosition = .secondHandUp
-//                }
-//            }
-//        }
-//
-//        else if(indexUp > 0 &&
-//                middleUp > 0 &&
-//                ringUp > 0 &&
-//                littleUp > 0) {
-//            if self.restingHand {
-//                if handPosition == .firstHandUp {
-//                    self.restingHand = false
-//                    descriptionLabel.text = "Mão abaixada"
-//                    gifImage.isHidden = true
-//                    changeImageToEat()
-//                    changeRestingHand()
-//                    handPosition = .firstHandDown
-//                }
-//            }
-//
-//        }
+
+        else if (indexUp < 0 &&
+            middleUp < 0 &&
+            ringUp < 0 &&
+            littleUp < 0) {
+            if self.restingHand {
+                if handPosition == .handResting {
+                    self.restingHand = false
+                    descriptionLabel.text = "Mão levantada"
+                    gifImage.isHidden = true
+                    changeRestingHand()
+                    handPosition = .firstHandUp
+                } else if handPosition == .firstHandDown {
+                    self.restingHand = false
+                    descriptionLabel.text = "Comer - eat"
+                    gifImage.isHidden = false
+                    print("Comer")
+                    handPosition = .finalPosition
+                }
+            }
+        }
+
+        else if(indexUp > 0 &&
+                middleUp > 0 &&
+                ringUp > 0 &&
+                littleUp > 0) {
+            if self.restingHand {
+                if handPosition == .firstHandUp {
+                    self.restingHand = false
+                    descriptionLabel.text = "Mão abaixada"
+                    gifImage.isHidden = true
+                    changeImageToEat()
+                    changeRestingHand()
+                    handPosition = .firstHandDown
+                }
+            }
+
+        }
         else if handPosition == .finalPosition {
             resetButton.isHidden = false
             print("aparece botão")
