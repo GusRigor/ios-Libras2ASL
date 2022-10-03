@@ -16,4 +16,5 @@ enum HandPositions {
     case littleUp
     
     case handResting
+    case finalPosition
 }

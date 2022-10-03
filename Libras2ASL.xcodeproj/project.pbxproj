@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5EAB6828EB8443000E34F7 /* VCViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EAB6728EB8443000E34F7 /* VCViews.swift */; };
+		1C5EAB6A28EB8724000E34F7 /* VC+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5EAB6928EB8724000E34F7 /* VC+AVFoundation.swift */; };
 		1C9033B228C6A17A00EDFC84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9033B128C6A17A00EDFC84 /* AppDelegate.swift */; };
 		1C9033B428C6A17A00EDFC84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9033B328C6A17A00EDFC84 /* SceneDelegate.swift */; };
 		1C9033B628C6A17A00EDFC84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9033B528C6A17A00EDFC84 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C5EAB6728EB8443000E34F7 /* VCViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCViews.swift; sourceTree = "<group>"; };
+		1C5EAB6928EB8724000E34F7 /* VC+AVFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+AVFoundation.swift"; sourceTree = "<group>"; };
 		1C9033AE28C6A17A00EDFC84 /* Libras2ASL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Libras2ASL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9033B128C6A17A00EDFC84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C9033B328C6A17A00EDFC84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C5EAB6628EB8433000E34F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C5EAB6728EB8443000E34F7 /* VCViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1C9033A528C6A17A00EDFC84 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +99,7 @@
 		1C9033C728C6A29600EDFC84 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1C5EAB6628EB8433000E34F7 /* Views */,
 				1C9033B528C6A17A00EDFC84 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -150,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1CDCB88028CFBC98000047B1 /* UIImage+GIF.swift.swift */,
+				1C5EAB6928EB8724000E34F7 /* VC+AVFoundation.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -227,9 +241,11 @@
 				1CDCB87E28C8EC6A000047B1 /* HeaderViewModel.swift in Sources */,
 				1CDCB87C28C8EA7F000047B1 /* HeaderView.swift in Sources */,
 				1C9033B628C6A17A00EDFC84 /* ViewController.swift in Sources */,
+				1C5EAB6828EB8443000E34F7 /* VCViews.swift in Sources */,
 				1C9033B228C6A17A00EDFC84 /* AppDelegate.swift in Sources */,
 				1CE8471F28D916E500DBDEE6 /* HandPositions.swift in Sources */,
 				1C9033B428C6A17A00EDFC84 /* SceneDelegate.swift in Sources */,
+				1C5EAB6A28EB8724000E34F7 /* VC+AVFoundation.swift in Sources */,
 				1CDCB87928C80D2B000047B1 /* FingerModel.swift in Sources */,
 				1CDCB88128CFBC98000047B1 /* UIImage+GIF.swift.swift in Sources */,
 				1C9033CC28C6A47300EDFC84 /* CameraView.swift in Sources */,
