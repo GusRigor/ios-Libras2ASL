@@ -27,6 +27,14 @@ class ViewController: UIViewController {
         return view
     }()
     
+    lazy var resetButton: UIButton = {
+        let view = UIButton(type: .roundedRect)
+        view.translatesAutoresizingMaskIntoConstraints = true
+        view.layer.cornerRadius = 20
+        view.isHidden = true
+        return view
+    }()
+    
     var cameraView: CameraView
     
     var handPosition: HandPositions
@@ -222,8 +230,9 @@ class ViewController: UIViewController {
 //            }
 //
 //        }
-        else {
-            resetWordForFinalPosition()
+        else if handPosition == .finalPosition {
+            resetButton.isHidden = false
+            print("aparece botão")
         }
 
         cameraView.showPoints(pointsConverted)
@@ -262,8 +271,14 @@ class ViewController: UIViewController {
     func resetRestingHand() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.handPosition = .handResting
+            self.resetButton.isHidden = true
             print("Resetou as posições")
         }
+    }
+    
+    @objc
+    func didTapResetButton() {
+        resetWordForFinalPosition()
     }
     
 }

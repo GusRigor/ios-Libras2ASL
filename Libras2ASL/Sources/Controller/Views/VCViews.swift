@@ -25,6 +25,7 @@ extension ViewController {
         
         addDescriptionView()
         addImageView()
+        addResetButton()
     }
     
     func addImageView() {
@@ -79,5 +80,17 @@ extension ViewController {
         cameraView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         cameraView.widthAnchor.constraint(equalToConstant: 350).isActive = true
         cameraView.heightAnchor.constraint(equalToConstant: 350).isActive = true
+    }
+    
+    func addResetButton() {
+        resetButton.backgroundColor =  .white
+        resetButton.tintColor = .black
+        
+        resetButton.setTitle("Resetar palavra", for: .normal)
+        resetButton.addTarget(self, action: #selector(didTapResetButton), for: .touchUpInside)
+        
+        view.addSubview(resetButton)
+        
+        resetButton.frame = CGRect(x: 120.0, y: 330.0, width: 150, height: 50.0)
     }
 }
