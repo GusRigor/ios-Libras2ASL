@@ -45,6 +45,7 @@ class ViewController: UIViewController {
     
     var imageEat: UIImage
     var imageHi: UIImage
+    var imageNoon: UIImage
     
     var restingHand = true
     
@@ -54,6 +55,7 @@ class ViewController: UIViewController {
         handPosition = .handResting
         imageEat = UIImage()
         imageHi = UIImage()
+        imageNoon = UIImage()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -169,7 +171,34 @@ class ViewController: UIViewController {
         let ringUp = ringTip.y - ringMcp.y
         let littleUp = littleTip.y - littleMcp.y
         
-        if (indexUp > 0 &&
+        if (indexUp < 0 &&
+            middleUp < 0 &&
+            ringUp > 0 &&
+            littleUp > 0) {
+            
+            let distanceFingers = hypotf(Float(indexTip.x - middleTip.x),Float(indexTip.y - middleTip.y))
+            if distanceFingers < 20 {
+                if handPosition == .handResting {
+                    self.restingHand = false
+                    descriptionLabel.text = "2 dedos levantados"
+                    gifImage.isHidden = true
+                    changeRestingHand()
+                    handPosition = .midday
+                    changeImageToNoon()
+                }
+                
+                else if handPosition == .midday {
+                    self.restingHand = false
+                    descriptionLabel.text = "Meio dia - Noon"
+                    gifImage.isHidden = false
+                    print("Meio dia")
+                    self.handPosition = .finalPosition
+                }
+            }
+            
+        }
+        
+        else if (indexUp > 0 &&
             middleUp > 0 &&
             ringUp > 0 &&
             littleUp < 0) {
@@ -181,9 +210,7 @@ class ViewController: UIViewController {
                     changeRestingHand()
                     handPosition = .littleUp
                     changeImageToHi()
-                } else if (handPosition == .littleUp) &&
-                        (indexUp > 0 && middleUp > 0 &&
-                        ringUp > 0 && littleUp < 0) {
+                } else if (handPosition == .littleUp) {
                     self.restingHand = false
                     descriptionLabel.text = "Oi - Hi"
                     gifImage.isHidden = false
@@ -265,6 +292,12 @@ class ViewController: UIViewController {
     func changeImageToEat() {
         DispatchQueue.main.async {
             self.gifImage.image = self.imageEat
+        }
+    }
+    
+    func changeImageToNoon() {
+        DispatchQueue.main.async {
+            self.gifImage.image = self.imageNoon
         }
     }
     

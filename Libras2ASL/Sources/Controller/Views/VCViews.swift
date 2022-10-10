@@ -12,8 +12,9 @@ extension ViewController {
     func setupView() {
         title = "Libras2ASL"
         
-        let gifHiURL : String = "https://pa1.narvii.com/6427/90f2abb40e1757de174ffffe9bc5afb8e6845c60_hq.gif"
-        let gifEatURL : String = "https://www.lifeprint.com/asl101/gifs/e/eat.gif"
+        let gifHiURL: String = "https://pa1.narvii.com/6427/90f2abb40e1757de174ffffe9bc5afb8e6845c60_hq.gif"
+        let gifEatURL: String = "https://www.lifeprint.com/asl101/gifs/e/eat.gif"
+        let gifNoonURL: String = "https://www.lifeprint.com/asl101/gifs/n/noon.gif"
         
         if let image = UIImage.gifImageWithURL(gifEatURL) {
             imageEat = image
@@ -23,16 +24,16 @@ extension ViewController {
             imageHi = image
         }
         
+        if let image = UIImage.gifImageWithURL(gifNoonURL) {
+            imageNoon = image
+        }
+        
         addDescriptionView()
         addImageView()
         addResetButton()
     }
     
     func addImageView() {
-//        let gifURL : String = "https://www.lifeprint.com/asl101/gifs/e/eat.gif"
-//        let gif = UIImage.gifImageWithURL(gifURL)
-//
-//        gifImage.image = gif
         gifImage.backgroundColor =  .white
         gifImage.layer.cornerRadius = 10
         gifImage.layer.masksToBounds = true
