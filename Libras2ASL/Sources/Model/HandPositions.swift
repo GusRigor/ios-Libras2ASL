@@ -18,5 +18,6 @@ enum HandPositions {
     case midday
     
     case handResting
+    case hasSuffix
     case finalPosition
 }

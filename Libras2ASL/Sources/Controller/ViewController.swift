@@ -46,6 +46,7 @@ class ViewController: UIViewController {
     var imageEat: UIImage
     var imageHi: UIImage
     var imageNoon: UIImage
+    var imageLunch: UIImage
     
     var restingHand = true
     
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
         imageEat = UIImage()
         imageHi = UIImage()
         imageNoon = UIImage()
+        imageLunch = UIImage()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -187,6 +189,15 @@ class ViewController: UIViewController {
                     changeImageToNoon()
                 }
                 
+                else if handPosition == .hasSuffix {
+                    self.restingHand = false
+                    descriptionLabel.text = "Almoço - Lunch"
+                    gifImage.isHidden = false
+                    print("Almoço")
+                    changeImageToLunch()
+                    self.handPosition = .finalPosition
+                }
+                
                 else if handPosition == .midday {
                     self.restingHand = false
                     descriptionLabel.text = "Meio dia - Noon"
@@ -236,7 +247,7 @@ class ViewController: UIViewController {
                     descriptionLabel.text = "Comer - eat"
                     gifImage.isHidden = false
                     print("Comer")
-                    handPosition = .finalPosition
+                    handPosition = .hasSuffix
                 }
             }
         }
@@ -266,7 +277,7 @@ class ViewController: UIViewController {
     }
     
     func resetWordForFinalPosition() {
-        if handPosition == .finalPosition {
+        if handPosition == .finalPosition || handPosition == .hasSuffix {
             self.restingHand = true
             descriptionLabel.text = "Faça uma palavra em Libras:"
             gifImage.isHidden = true
@@ -298,6 +309,12 @@ class ViewController: UIViewController {
     func changeImageToNoon() {
         DispatchQueue.main.async {
             self.gifImage.image = self.imageNoon
+        }
+    }
+    
+    func changeImageToLunch() {
+        DispatchQueue.main.async {
+            self.gifImage.image = self.imageLunch
         }
     }
     

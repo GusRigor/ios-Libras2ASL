@@ -15,6 +15,7 @@ extension ViewController {
         let gifHiURL: String = "https://pa1.narvii.com/6427/90f2abb40e1757de174ffffe9bc5afb8e6845c60_hq.gif"
         let gifEatURL: String = "https://www.lifeprint.com/asl101/gifs/e/eat.gif"
         let gifNoonURL: String = "https://www.lifeprint.com/asl101/gifs/n/noon.gif"
+        let gitLunchURL: String = "https://www.lifeprint.com/asl101/gifs/l/lunch-eat-noon.gif"
         
         if let image = UIImage.gifImageWithURL(gifEatURL) {
             imageEat = image
@@ -26,6 +27,10 @@ extension ViewController {
         
         if let image = UIImage.gifImageWithURL(gifNoonURL) {
             imageNoon = image
+        }
+        
+        if let image = UIImage.gifImageWithURL(gitLunchURL) {
+            imageLunch = image
         }
         
         addDescriptionView()
